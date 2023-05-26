@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/metal-young/TodoChat-Doc',
+            'https://github.com/metal-young/TodoChat-Doc/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/metal-young/TodoChat-Doc',
+            'https://github.com/metal-young/TodoChat-Doc/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -77,6 +77,10 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/metal-young/TodoChat-Doc',
             label: 'GitHub',
