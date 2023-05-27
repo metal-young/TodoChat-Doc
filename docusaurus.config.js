@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TodoChat Docs',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'todolist + chat',
+  favicon: 'img/todochat.png',
 
   // Set the production url of your site here
   url: 'https://todochat-doc.kaminono.com',
@@ -62,12 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/todochat.png',
       navbar: {
-        title: 'My Site',
+        title: 'TodoChat',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'TodoChat Logo',
+          src: 'img/todochat.png',
         },
         items: [
           {
