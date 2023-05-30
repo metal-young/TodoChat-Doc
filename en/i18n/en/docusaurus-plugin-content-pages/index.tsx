@@ -17,12 +17,12 @@ function HomepageHeader() {
       
         <h1 className="hero__title"><Translate>{siteConfig.title}</Translate></h1>
         
-        <p className="hero__subtitle"><Translate>{siteConfig.tagline}</Translate></p>
+        <p className="hero__subtitle"><Translate>你的智能待办事项管理助手</Translate></p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="https://forms.gle/VJtRDEhTVXzutRbu5">
-            Join WaitList ⏱️
+            加入等待名单 ⏱️
           </Link>
         </div>
        
@@ -36,8 +36,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Hello from ${siteConfig.title}`}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
