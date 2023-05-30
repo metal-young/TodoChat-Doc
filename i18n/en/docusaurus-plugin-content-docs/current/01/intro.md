@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: what-is-todochat
+id: intro.html
 title: 什么是 TodoChat
 tags:
   - Getting started
