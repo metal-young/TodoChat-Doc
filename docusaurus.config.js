@@ -95,33 +95,33 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'TodoChat 101',
+          //       to: '/docs/01/intro.html',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     // {
+          //     //   label: 'Stack Overflow',
+          //     //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     // },
+          //     // {
+          //     //   label: 'Discord',
+          //     //   href: 'https://discordapp.com/invite/docusaurus',
+          //     // },
+          //     // {
+          //     //   label: 'Twitter',
+          //     //   href: 'https://twitter.com/docusaurus',
+          //     // },
             ],
-          },
-          {
-            title: 'Community',
-            items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              // {
-              //   label: 'Twitter',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-            ],
-          },
-        ],
+        //   },
+        // ],
         copyright: `Copyright © ${new Date().getFullYear()} TodoChat. Built with Docusaurus.`,
       },
       prism: {
