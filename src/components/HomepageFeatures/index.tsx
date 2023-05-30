@@ -10,32 +10,28 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '专注于你的工作，提高你的效率',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+      <>TodoChat结合了单核工作法和番茄工作法，帮助你更有效地管理你的时间和任务。你可以专注于一项任务，然后在完成任务后休息一会儿，这样可以提高你的工作效率，减少工作压力。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '使用自然语言管理你的待办事项',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+TodoChat接入主流大语言模型，让你可以通过自然语言来创建、更新和管理你的待办事项。你只需要输入你的任务，TodoChat就会自动帮你安排和管理。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '为你的生活和工作带来便利',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+无论你是在工作中，还是在生活中，TodoChat都可以帮助你管理你的任务。你可以随时随地查看你的待办事项，确保你不会错过任何重要的事情。
       </>
     ),
   },
