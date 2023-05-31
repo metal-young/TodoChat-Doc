@@ -5,7 +5,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Translate from '@docusaurus/Translate';
-
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -19,24 +18,34 @@ function HomepageHeader() {
         
         <p className="hero__subtitle"><Translate>Your Smart To-do Manager Assistant</Translate></p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://forms.gle/VJtRDEhTVXzutRbu5">
-            加入等待名单（google） ⏱️
-          </Link>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <Link
-            className="button button--secondary button--lg"
-            to="https://metaxiaoyu.feishu.cn/share/base/form/shrcnNoGjCBhPhRUNU2kJ2MkZne">
-            加入等待名单（飞书） ⏱️
-          </Link>
+      
+        <LinkJoinWaitlistComponent />;
+          
         </div>
        
       </div>
     
     </header>
   );
+}
+
+function LinkJoinWaitlistComponent() {
+  const { i18n } = useDocusaurusContext();
+  const { currentLocale } = i18n;
+
+  if (currentLocale.startsWith('zh')) {
+    return <Link
+    className="button button--secondary button--lg"
+    to="https://metaxiaoyu.feishu.cn/share/base/form/shrcnNoGjCBhPhRUNU2kJ2MkZne">
+    加入等待名单（飞书） ⏱️
+  </Link>;
+  } else {
+    return <Link
+    className="button button--secondary button--lg"
+    to="https://forms.gle/VJtRDEhTVXzutRbu5">
+    Join waitlist
+  </Link>;
+  }
 }
 
 export default function Home(): JSX.Element {
