@@ -43,7 +43,7 @@ function LinkJoinWaitlistComponent() {
     return <Link
     className="button button--secondary button--lg"
     to="https://forms.gle/VJtRDEhTVXzutRbu5">
-    加入等待名单（google） ⏱️
+    Join waitlist
   </Link>;
   }
 }
