@@ -54,8 +54,15 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/metal-young/TodoChat-Doc/tree/main/',
+          // @ts-ignore
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            // Link to Crowdin for French docs
+            if (locale !== 'zh-cn') {
+              return `https://crowdin.com/project/todochat-doc/${locale}`;
+            }
+            // Link to GitHub for English docs
+            return `https://github.com/metal-young/TodoChat-Doc/tree/main/${versionDocsDirPath}/${docPath}`;
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
