@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'TodoChat Docs',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'TodoChat 土豆谈',
+  tagline: 'todolist + chat',
+  favicon: 'img/todochat.png',
 
   // Set the production url of your site here
   url: 'https://todochat-doc.kaminono.com',
@@ -41,18 +41,35 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/metal-young/TodoChat-Doc/tree/main/',
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            // Link to Crowdin for French docs
+            if (locale !== 'zh-cn') {
+              return `https://crowdin.com/project/todochat-doc/${locale}`;
+            }
+            // Link to GitHub for English docs
+            return `https://github.com/metal-young/TodoChat-Doc/tree/main/${versionDocsDirPath}/${docPath}`;
+          },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/metal-young/TodoChat-Doc/tree/main/',
+          // @ts-ignore
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            // Link to Crowdin for French docs
+            if (locale !== 'zh-cn') {
+              return `https://crowdin.com/project/todochat-doc/${locale}`;
+            }
+            // Link to GitHub for English docs
+            return `https://github.com/metal-young/TodoChat-Doc/tree/main/${versionDocsDirPath}/${docPath}`;
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID:  'G-NEJLCQDNQ4',
+          anonymizeIP: true,
         },
       }),
     ],
@@ -62,21 +79,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/todochat.png',
       navbar: {
-        title: 'My Site',
+        title: 'TodoChat',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'TodoChat Logo',
+          src: 'img/todochat.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'TodoChat 101',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
@@ -91,33 +108,33 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'TodoChat 101',
+          //       to: '/docs/01/intro.html',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     // {
+          //     //   label: 'Stack Overflow',
+          //     //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     // },
+          //     // {
+          //     //   label: 'Discord',
+          //     //   href: 'https://discordapp.com/invite/docusaurus',
+          //     // },
+          //     // {
+          //     //   label: 'Twitter',
+          //     //   href: 'https://twitter.com/docusaurus',
+          //     // },
             ],
-          },
-          {
-            title: 'Community',
-            items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              // {
-              //   label: 'Twitter',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-            ],
-          },
-        ],
+        //   },
+        // ],
         copyright: `Copyright © ${new Date().getFullYear()} TodoChat. Built with Docusaurus.`,
       },
       prism: {
