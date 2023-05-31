@@ -19,7 +19,7 @@ function HomepageHeader() {
         <p className="hero__subtitle"><Translate>你的智能待办事项管理助手</Translate></p>
         <div className={styles.buttons}>
       
-        <LinkJoinWaitlistComponent />;
+        <LinkJoinWaitlistComponent />
           
         </div>
        
