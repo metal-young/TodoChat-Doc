@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-id: start-at-one-percent.md
+id: start-at-one-percent.html
 title: 开始于1%
 tags:
   - 方法论

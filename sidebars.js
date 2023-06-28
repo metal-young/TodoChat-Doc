@@ -18,7 +18,8 @@ const sidebars = {
       items: [
         '02/overlooking-time.html',
         '02/split-purpose.html',
-        '02/start-at-one-percent.md',
+        '02/start-at-one-percent.html',
+        '02/focus-on-emergency.html',
       ]
 
     },
