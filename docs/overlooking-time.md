@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: overlooking-time.html
+id: overlooking-time
 title: 全景时间
 tags:
   - 方法论

@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.概述": {
+    "message": "Overview",
+    "description": "The label for category 概述 in sidebar docs"
+  },
+  "sidebar.docs.category.方法论": {
+    "message": "方法论",
+    "description": "The label for category 方法论 in sidebar docs"
+  },
+  "sidebar.docs.category.使用指南": {
+    "message": "使用指南",
+    "description": "The label for category 使用指南 in sidebar docs"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-id: split-purpose.html
+id: split-purpose
 title: 拆分目的
 tags:
   - 方法论

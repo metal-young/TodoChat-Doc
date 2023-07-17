@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: shortcut-checklist.html
+id: shortcut-checklist
 title: 在快捷清单中控制数量
 ---
 

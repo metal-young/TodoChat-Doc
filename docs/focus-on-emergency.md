@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-id: focus-on-emergency.html
+id: focus-on-emergency
 title: 关注紧急
 tags:
   - 方法论

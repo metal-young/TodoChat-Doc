@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-cn',
-    locales: ['zh-cn', 'en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans', 'en'],
   },
 
   presets: [
@@ -38,15 +38,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', 
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            // Link to Crowdin for French docs
-            if (locale !== 'zh-cn') {
-              return `https://crowdin.com/project/todochat-doc/${locale}`;
-            }
-            // Link to GitHub for English docs
             return `https://github.com/metal-young/TodoChat-Doc/tree/main/${versionDocsDirPath}/${docPath}`;
           },
         },
@@ -56,11 +52,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // @ts-ignore
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            // Link to Crowdin for French docs
-            if (locale !== 'zh-cn') {
-              return `https://crowdin.com/project/todochat-doc/${locale}`;
-            }
-            // Link to GitHub for English docs
             return `https://github.com/metal-young/TodoChat-Doc/tree/main/${versionDocsDirPath}/${docPath}`;
           },
         },
@@ -93,10 +84,15 @@ const config = {
             position: 'left',
             label: 'TodoChat 101',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
+          },
+          {
+            href: 'https://todochat.kaminono.com/',
+            label: 'TodoChatWebSite',
+            position: 'left',
           },
           {
             href: 'https://github.com/metal-young/TodoChat-Doc',
